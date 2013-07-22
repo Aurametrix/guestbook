@@ -1,0 +1,4 @@
+guestbook
+=========
+
+simple GAE example
