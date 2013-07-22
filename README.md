@@ -1,7 +1,10 @@
-guestbook
-=========
+# Guestbook
+############
 
 simple GAE example
+Users can log-in with their Google account and enter messages in multiple guestbooks
+messages are stored in App Engine High Replication Datastore (HRD) 
+and retrieved using a strongly consistent (ancestor) query.
 
 A webapp2 application has two parts:
 one or more RequestHandler classes that process requests and build responses
