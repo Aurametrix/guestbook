@@ -9,6 +9,7 @@ and retrieved using a strongly consistent (ancestor) query.
 A webapp2 application has two parts:
 one or more RequestHandler classes that process requests and build responses
 a WSGIApplication instance that routes incoming requests to handlers based on the URL
+http://webapp-improved.appspot.com/
 
 This version has two handlers: 
 MainPage, mapped to the URL /, displays a web form. 
@@ -31,3 +32,4 @@ https://developers.google.com/appengine/docs/python/users/
 
 ## Templating System to keep HTML separately from the code 
 Jinja2  (EZT, Cheetah, ClearSilver, Quixote, Django ...)
+http://jinja.pocoo.org/docs/
