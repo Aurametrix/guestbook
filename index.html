@@ -6,7 +6,12 @@
   </head>
   <body>
   
-  <img src="../images/hedgehog-injured-blue.jpg"></img>
+  {% if guestbook_name=="default_guestbook" %}
+      <img src="../images/hedgehog-injured-blue.jpg"></img>
+  {% else %}
+      <img src="../images/hedgehog-injured.jpg"></img>
+  {% endif %}
+  
   
     {% for greeting in greetings %}
       {% if greeting.author %}
