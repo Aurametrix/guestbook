@@ -1,4 +1,23 @@
-body {
-  font-family: Verdana, Helvetica, sans-serif;
-  background-color: #DDDDDD;
+body{background:#dddddd;margin:0;padding:0}
+.example{background:#FFF;width:800px;border:1px #000 solid;margin:20px auto;padding:15px;-moz-border-radius: 3px;-webkit-border-radius: 3px}
+
+#main_object {
+    position: relative;
+}
+#main_object img {
+    display: block;
+}
+#main_object #wave_zone img {
+    position:absolute;
+    left:-9999px;
+}
+#main_object span {
+    position:absolute;
+    font-size:0px;
+}
+#main_object #wave_zone {
+    position:relative;
+    display:block;
+    overflow:hidden;
+    background-color:#000;
 }

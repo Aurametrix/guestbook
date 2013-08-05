@@ -3,11 +3,17 @@
 <html>
   <head>
     <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+    <script type="text/javascript" src="js/main.js"></script>
   </head>
   <body>
   
   {% if guestbook_name=="default_guestbook" %}
-      <img src="../images/hedgehog-injured-blue.jpg"></img>
+      <div class="blue">
+        <div id="main_object">
+            <img id="source_img" src="../images/hedgehog-injured-blue.jpg">
+            <div id="wave_zone"></div>
+        </div>
+      </div>
   {% else %}
       <img src="../images/hedgehog-injured.jpg"></img>
   {% endif %}
