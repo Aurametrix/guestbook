@@ -2,6 +2,7 @@
 {% autoescape true %}
 <html>
   <head>
+    <title>wavy guestbook</title>
     <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
     <script type="text/javascript" src="js/main.js"></script>
   </head>
@@ -15,7 +16,9 @@
         </div>
       </div>
   {% else %}
-      <img src="../images/hedgehog-injured.jpg"></img>
+      <div class="yellow">
+        <img src="../images/hedgehog-injured.jpg"></img>
+      </div>  
   {% endif %}
   <p>
   
