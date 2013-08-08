@@ -66,15 +66,11 @@ class Guestbook(webapp2.RequestHandler):
         guestbook_name = self.request.get('guestbook_name',
                                           DEFAULT_GUESTBOOK_NAME)
         greeting = Greeting(parent=guestbook_key(guestbook_name))
-        greeting.content = "fluff" 
         greeting.author = users.get_current_user()
-        #greeting.author.nickname = "Anon"
-        #if users.get_current_user():
-        #    greeting.author = users.get_current_user()
 
-        nickname = None
+        #nickname = None
         if greeting.author:
-           nickname = greeting.author.nickname()
+           #nickname = greeting.author.nickname()
 
            greeting = Greeting.gql('WHERE author = :1 AND ANCESTOR IS :2',
                greeting.author, guestbook_key(guestbook_name)).get()
